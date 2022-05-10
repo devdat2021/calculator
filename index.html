@@ -30,17 +30,17 @@
       </script>
       <!-- for styling -->
       <style>
-           .title{
+           /*.title{
          margin-bottom: 10px;
          text-align:center;
          width: 210px;
-         color:rgb(32, 99, 99);
-         border: solid black 2px;
-         border-radius: 25px;
-         font-size: 20px;
+        color:rgb(32, 99, 99);
+         /*border: solid black 2px;
+         border-radius: 25px;*/
+         /*font-size: 20px;
          font-family: 'Arial Rounded MT';
        
-         }
+         }*/
   
          input[type="button"]
          {
@@ -49,8 +49,8 @@
          border: solid rgb(12, 10, 10) 2px;
          border-radius: 25px;
          width:100%;
-         font-family: monospace;
-         font-size: 45px;
+         font-family: cursive;
+         font-size: 40px;
          background:rgb(95, 105, 105);
          
          }
@@ -58,16 +58,16 @@
          input[type="text"]
          {
          background-color:#ffff;
-         border: solid black 2px;
+         border: solid rgb(0, 0, 0) 2px;
          border-radius: 25px;
          width:500px;
          height: 50px;
          font-size: 45px;
-         font-family: 'Ink journal';
+         font-family:cursive;
          
          }
          input[type="button"]:hover {
-            background: rgb(255, 243, 243);
+            background: rgb(204, 201, 201);
             
          }
          input[type="button"]:active {
@@ -77,36 +77,39 @@
             float:left;
          }
          .footer {
-            background-color: rgb(123, 241, 194);
-            padding: 10px;
+            background-color: rgb(70, 156, 255);
+            padding: 5px;
             clear: both;
             border-radius: 10px;
-            margin-right: 730px;
-            padding-left: 20px;
-            margin-left: 50px;
+            margin-right: 760px;
+            padding-left: 10px;
+            margin-left: 5px;
             font-size: 20px;
-            font-family: 'Berlin Sans FB';
+            font-family: cursive;
+            margin-top: 5px;
+            color:rgb(224, 224, 224);
         }
         a {
            text-decoration: none;
+           color: rgb(255, 194, 124);
         }
         a:hover {
-           color: blueviolet;
-           text-decoration: underline;
-         
-        }
+           color: rgb(105, 231, 248);
+           text-decoration: underline;}
+ 
+        
       </style>
    </head>
    <!-- create table -->
    <body>
-   <div class = title > Calculator®</div>
-      <img id="cal" src="https://user-images.githubusercontent.com/84656845/167680323-41f14d13-5d01-4938-a9e4-75d5d3e7afe1.png" alt="Logo" width="50" height="60">
+   <div class = title style="font-family: cursive;"><img src="https://user-images.githubusercontent.com/84656845/164444480-ec2f85ec-46de-4a6a-9c0a-e57bfe63a9a6.png" alt="Calculaor"></div>
+      
       
       <table >
          <tr>
-            <td colspan="3"><input type="text" id="result"/></td>
+            <td colspan="3" title="Type or click for calculating"><input type="text" id="result" placeholder="Enter the value" style="font-size:30px ;"/></td>
             <!-- clr() function will call clr to clear all value -->
-            <td><input type="button" value="c" onclick="clr()"/> </td>
+            <td><input type="button" value="🧹" title="Clear"onclick="clr()"/ style="font-size:38px;"> </td>
 
          </tr>
          <tr>
@@ -115,26 +118,26 @@
             <td><input type="button" value="1" onclick="dis('1')"/> </td>
             <td><input type="button" value="2" onclick="dis('2')"/> </td>
             <td><input type="button" value="3" onclick="dis('3')"/> </td>
-            <td><input type="button" value="÷" onclick="dis('/')"/> </td>
+            <td><input type="button" title="Divide"value="➗" onclick="dis('/')" style="font-size: 38px;"/> </td>
          </tr>
          <tr>
             <td><input type="button" value="4" onclick="dis('4')"/> </td>
             <td><input type="button" value="5" onclick="dis('5')"/> </td>
             <td><input type="button" value="6" onclick="dis('6')"/> </td>
-            <td><input type="button" value="-" onclick="dis('-')"/> </td>
+            <td><input type="button" title="Substract"value="➖" onclick="dis('-')" style="font-size: 38px;"/> </td>
          </tr>
          <tr>
             <td><input type="button" value="7" onclick="dis('7')"/> </td>
             <td><input type="button" value="8" onclick="dis('8')"/> </td>
             <td><input type="button" value="9" onclick="dis('9')"/> </td>
-            <td><input type="button" value="+" onclick="dis('+')"/> </td>
+            <td><input type="button" title="Add"value="➕" onclick="dis('+')" style="font-size: 38px;"/> </td>
          </tr>
          <tr>
             <td><input type="button" value="." onclick="dis('.')"/> </td>
             <td><input type="button" value="0" onclick="dis('0')"/> </td>
             <!-- solve function call function solve to evaluate value -->
-            <td><input type="button" value="=" onclick="solve()"/> </td>
-            <td><input type="button" value="×" onclick="dis('*')"/> </td>
+            <td><input type="button" title="Click for answer"value="=" onclick="solve()"/> </td>
+            <td><input type="button" title="Multiply"value="✖" onclick="dis('*')" style="font-size:38px;"/> </td>
             
          </tr>
       </table>
